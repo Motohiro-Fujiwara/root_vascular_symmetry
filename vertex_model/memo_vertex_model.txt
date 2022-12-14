@@ -1,5 +1,0 @@
-Calculation
-C++
-
-Visualize
-Processing

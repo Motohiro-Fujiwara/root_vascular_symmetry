@@ -1,0 +1,10 @@
+Boundary quantification
+We determined each position of the tricellular junctions in the root vascular tissue at the transverse section of the proliferation zone using the Fiji plugin Tissue Analyzer.
+
+Symmetry:boundary_symmetry.xlsx
+
+Roughness:boundary_roughness.xlsx
+
+Angle:boundary_angle.xlsx
+
+Aspect ratio:by Fiji plugin Tissue Analyzer

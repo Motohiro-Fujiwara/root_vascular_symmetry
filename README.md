@@ -1,2 +1,2 @@
 # root_vascular_symmetry
-Quantification and vertex model code for root vascular symmetry. 
+Boundary quantification and vertex model code for root vascular symmetry. 

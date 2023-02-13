@@ -1,5 +1,5 @@
 # Root vascular symmetry
- Boundary quantification and vertex model code for root vascular symmetry in [論文名]。Description of the contents of each folder.
+ Boundary quantification and vertex model code for root vascular symmetry in "Patterned proliferation orients tissue-wide stress to control root vascular symmetry in Arabidopsis" (https://doi.org/10.1016/j.cub.2023.01.036). Description of the contents of each folder.
  1.	boundary_quantification
 <br>We determined each position of the tricellular junctions in the root vascular tissue at the transverse section of the proliferation zone using the Fiji plugin Tissue Analyzer.
 <br>Symmetry is calculated by boundary_symmetry.xlsx.

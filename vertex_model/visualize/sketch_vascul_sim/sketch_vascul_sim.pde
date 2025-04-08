@@ -169,13 +169,11 @@ void draw() {
     }
     }
    }//pse_edge line red
-   
+    ifac+=10;
+   //saveFrame("foldername/z_form_####.png");
   println(ifac);
   } //ifac
-  
-   ifac+=10;
-   //saveFrame("foldername/z_form_####.png");
- 
+
    if (ifac==61 /*2781*//*2531*//*3281*/) {
     //saveFrame("foldername/z_form_1.png");
      }

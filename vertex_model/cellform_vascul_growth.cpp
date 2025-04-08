@@ -296,7 +296,7 @@ void Tissue::firstset_cell() {
 	Cellnum[26].k_lat=0.0;
 	Cellnum[26].k_peri=0.0;//0.0001;
 	
-	imax=Edge.size();
+	/*imax=Edge.size();
 	for (i=0; i<imax; i++) {
 		Edge[i].k_au=k_au;
 	}
@@ -318,7 +318,7 @@ void Tissue::firstset_cell() {
 	for (j=0; j<jmax; j++) {
 			Edge[Cellnum[26].GroupEdge[j]].k_aucy=0;
 	}
-	
+	*/
 	cout << imax << endl;//cell number
 	
 	//Geometory
@@ -488,7 +488,7 @@ void Tissue::firstset_cell() {
 		Cellnum[i].time_division=-1;//int(100000*drand48());							  
 	}
 	//xylem pse
-	/*for (i=0; i<9/*imax*/; i++) {
+	/*for (i=0; i<imax; i++) {
 		Cellnum[i].time_division=1000+int(500*drand48());
 	}*/
 	//pericycle
@@ -503,7 +503,8 @@ void Tissue::firstset_cell() {
 	//PSE
     Cellnum[4].time_division=1000+int(500*drand48());//2000
     Cellnum[3].time_division=1000+int(500*drand48());//2100
-    
+//PSE-LN
+	Cellnum[5].time_division=1000+int(500*drand48());//2100
 	Cellnum[8].time_division=1000+int(500*drand48());//2100
 	Cellnum[7].time_division=1600+int(500*drand48());//change
 	Cellnum[6].time_division=1600+int(500*drand48());//change
@@ -1282,9 +1283,9 @@ if (p<9000) {//echhan12000 wt9000 han10000
 				Cellnum[imax-1].k_api=Cellnum[i].k_api;
 				Cellnum[imax-1].k_bas=0.0;
 				Cellnum[imax-1].k_lat=0.0;
-				Edge[edge_max-2].k_au=k_au;
-				Edge[edge_max-1].k_cy=k_cy;
-				Edge[edge_max].k_aucy=k_aucy;
+				//Edge[edge_max-2].k_au=k_au;
+				//Edge[edge_max-1].k_cy=k_cy;
+				//Edge[edge_max].k_aucy=k_aucy;
                 
 				//Cellnum[i].Area0=Area_divi;
 				//Cellnum[imax-1].Area0=Area_divi;
@@ -1588,10 +1589,10 @@ if (p<9000) {//echhan12000 wt9000 han10000
                 Cellnum[imax-1].time_division=-1;
             }*/
             
-			Cellnum[i].Auxin=Cellnum[i].Auxin;	
-			Cellnum[imax-1].Auxin=Cellnum[i].Auxin;
-			Cellnum[i].Cytokinin=Cellnum[i].Cytokinin;	
-			Cellnum[imax-1].Cytokinin=Cellnum[i].Cytokinin;
+			//Cellnum[i].Auxin=Cellnum[i].Auxin;	
+			//Cellnum[imax-1].Auxin=Cellnum[i].Auxin;
+			//Cellnum[i].Cytokinin=Cellnum[i].Cytokinin;	
+			//Cellnum[imax-1].Cytokinin=Cellnum[i].Cytokinin;
 			
 				 //cout << endl;
 				 Cellnum[i].division_xylem+=1;
@@ -1802,7 +1803,7 @@ void Tissue::output_result() {
 	ofs_result[1].close();
 	
 	stringstream filename2;
-	filename2 << "/folderpass/result/neigborcell_result.dat"
+	filename2 << "/folderpass/result/neigborcell_result.dat";
 	ofs_result[2].open(filename2.str());
 	jmax=Vertices.size();//
 	for (j=0; j<jmax; j++) {
